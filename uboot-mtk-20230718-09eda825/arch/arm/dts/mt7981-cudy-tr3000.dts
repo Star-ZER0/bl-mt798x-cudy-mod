@@ -47,6 +47,13 @@
 			mtdids = "nmbm0=nmbm0";
 			mtdparts = "nmbm0:1024k(bl2),512k(u-boot-env),2048k(factory),256k(bdinfo),2048k(fip),116736k(ubi)";
 		};
+		
+		layout@3 {
+			label = "maximum-119.75m";
+			// mtd layout for immortalwrt/openwrt 114M ubi firmware
+			mtdids = "nmbm0=nmbm0";
+			mtdparts = "nmbm0:1024k(bl2),512k(u-boot-env),2048k(factory),256k(bdinfo),2048k(fip),122624k(ubi)";
+		};
 	};
 
 	gpio-keys {
