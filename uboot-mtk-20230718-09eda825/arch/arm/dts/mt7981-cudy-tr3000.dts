@@ -40,17 +40,24 @@
 			mtdids = "nmbm0=nmbm0";
 			mtdparts = "nmbm0:1024k(bl2),512k(u-boot-env),2048k(factory),256k(bdinfo),2048k(fip),114688k(ubi)";
 		};
-		
+
 		layout@2 {
 			label = "maximum-114m";
 			// mtd layout for immortalwrt/openwrt 114M ubi firmware
 			mtdids = "nmbm0=nmbm0";
 			mtdparts = "nmbm0:1024k(bl2),512k(u-boot-env),2048k(factory),256k(bdinfo),2048k(fip),116736k(ubi)";
 		};
-		
+
 		layout@3 {
-			label = "maximum-119.75m";
-			// mtd layout for immortalwrt/openwrt 114M ubi firmware
+			label = "maximum-114.25m";
+			// mtd layout for immortalwrt/openwrt 114.25M ubi firmware
+			mtdids = "nmbm0=nmbm0";
+			mtdparts = "nmbm0:1024k(bl2),512k(u-boot-env),2048k(factory),256k(bdinfo),2048k(fip),116992k(ubi)";
+		};
+
+		layout@4 {
+			label = "full-119.75m";
+			// mtd layout for immortalwrt/openwrt 119.75M ubi firmware
 			mtdids = "nmbm0=nmbm0";
 			mtdparts = "nmbm0:1024k(bl2),512k(u-boot-env),2048k(factory),256k(bdinfo),2048k(fip),122624k(ubi)";
 		};
